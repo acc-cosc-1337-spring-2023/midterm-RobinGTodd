@@ -11,10 +11,8 @@ int main()
     cout<<"Kinetic Energy Calculator\n";
     do 
     {
-        cout<<"Enter a mass (kg)\n";
-        cin>>m;
-        cout<<"Enter a velocity (m/s)\n";
-        cin>>v;
+        m = get_mass();
+        v = get_velocity();
         cout<<"Kinetic Energy: "<<get_kinetic_energy(m, v)<<"\n";
         cout<<"\n exit? (y/n)\n";
         cin>>exit_condition;
